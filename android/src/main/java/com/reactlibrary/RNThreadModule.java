@@ -50,6 +50,11 @@ public class RNThreadModule extends ReactContextBaseJavaModule implements Lifecy
   }
 
   @Override
+  public boolean canOverrideExistingModule() {
+    return true;
+  }
+
+  @Override
   public String getName() {
     return "ThreadManager";
   }
